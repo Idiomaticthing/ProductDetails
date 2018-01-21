@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<SCRIPT>
+function show()
+{
+var id=document.getElementById("ProductID").value;
+var name=document.getElementById("ProductName").value;
+var price=document.getElementById("ProductPrice").value;
+var quantity=document.getElementById("ProductQuantity").value;
+
+confirm("You have entered:"+"\n ProductID: "+ id +"\n ProductName: "+ name +"\n ProductPrice: "+ price +"\n ProductQuantity: "+ quantity +"\n\n\n Do you want to confirm these details  ?");
+
+}
+</SCRIPT>
+</head>
+<body background="icon.jpg">
+</br></br></br></br></br></br></br></br></br></br>
+<table border:10px solid align="center">
+<form>
+<tr> <th colspan="2" > PRODUCT DETAILS</th>
+  <tr>
+  <th>ProductID:<br></th>
+  <th><input type="text" ID="ProductID" value="" title="In This Format P[1-9] " pattern="P[1-9]{4}" maxlength="5" placeholder="P5256" required></th>
+  </tr>
+ <tr>
+<th>ProductName:<br></th>
+  <th><input type="text" ID="ProductName" value="" title="like 'nikhil'" maxlength="20" placeholder="Enter your Name" required><br></th>
+</tr>
+  <tr>
+<th>ProductPrice:<br></th>
+  <th><input type="label" ID="ProductPrice" value="1000" title="fixed price" readonly /><br></th>
+</tr>
+  <tr>
+<th>ProductQuantity:<br></th>
+  <th><input type="text" ID="ProductQuantity" value="" placeholder="1-9" pattern="[1-9]{1}" title="maximum quanty 9" maxlength="2" ><br></th></tr>
+  <tr><th colspan="2"><input type="button" value="Submit"   onclick="show()"/></th></tr>
+</form> 
+</table>
+
+</body>
+</html>

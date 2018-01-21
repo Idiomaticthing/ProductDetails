@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function check(form)
+{
+ 
+ if(form.IDENTITY.value == "nikhil" && form.PASSWORD.value == "password")
+  {
+    
+    window.open('ProductDetails.html')
+  }
+ else
+ {
+   alert("Error Password or Username")
+  }
+}
+</script>
+</head>
+<body background="icon.jpg">
+
+<table border:10px align="center">
+<form  method="post"  >
+ <tr><th colspan="2">LOG IN DETAILS:<br><br><br>
+ <tr>
+ <th>
+ ID:</th>
+  <td><input type="text" name="IDENTITY" value="" placeholder="Enter your ID" ></td></tr>
+  <br>
+ <tr>
+ <th>PASSWORD:</th>
+  <td><input type="Password" name="PASSWORD" value="" placeholder="********" ></td><br>
+  <br><br><br><br><br><br>
+  <tr><th colspan="2"><input type="submit" id="submit" onclick="check(form)" value="Log In"></td>
+</form> 
+
+
+</body>
+</html>
